@@ -36,13 +36,15 @@ module.exports = function(grunt) {
       }
     },
 
-    compass: {
-      dev: {
-        options: {
-          sassDir: 'scss',
-          cssDir: 'css'
+    sass: {
+        dist: {
+          options: {
+            style: 'expanded'
+          },
+          files: {
+            '<%= assets_location%>/css/style.css': '<%= assets_location%>/scss/style.scss'
+          }
         }
-      }
     },
 
     cssmin: {
@@ -59,7 +61,7 @@ module.exports = function(grunt) {
   });
 
   // Load grunt plugins.
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');

@@ -1,1 +1,4 @@
 /* Import all partials */
+body {
+  background: skyblue;
+}

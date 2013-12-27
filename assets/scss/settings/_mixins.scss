@@ -1,0 +1,7 @@
+// Example: @include font-size(2, 2.2);
+@mixin font-size($size: 1.6, $line: $size * 1.5){
+    font-size:   ceil($size * $font-base) + px;
+    line-height: ceil($line * $font-base) + px;
+    font-size:   $size + rem;
+    line-height: $line + rem;
+}

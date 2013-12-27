@@ -1,16 +1,8 @@
-//**
-// Typography vars
-//**
+//Typography
+$default-font-family: 'Open Sans', sans-serif;
 
-$default_font: Arial, Helvetica, sans-serif;
+$font-size: 150% !default; // percentage value (16 * 112.5% = 18px)
+$font-base: 24; // base font-size in pixels to work with in font-size mixins
+$line-height: 187.5% !default; // percentage value (16 * 162.5% = 30px)
 
-$header_font: Arial, Helvetica, sans-serif;
-
-
-//**
-// Layout vars
-//**
-
-// Golden ratio, which makes just about anything look lovely
-$golden: 1.618;
-
+$framework-max-width: 1280px;

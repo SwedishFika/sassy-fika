@@ -1,9 +1,7 @@
 /* Import all partials */
-@import "variables";
-@import "_color_and_bgs.scss";
-@import "_typography.scss";
+@import "settings/variables";
+@import "settings/colors";
+@import "settings/mixins";
 
+@import "globals";
 @import "layout";
-
-@import "_mediaqueries.scss";
-

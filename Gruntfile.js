@@ -8,14 +8,14 @@ module.exports = function(grunt) {
     watch: {
       compass: {
         files: [
-        'scss/*'
+        '<%= assets_location%>/**/*.scss'
         /*'bower_components/normalize-css/normalize.css'*/
         ],
         tasks: ['compass']
       },
       css: {
         files: [
-        'css/*'
+        '<%= assets_location%>/**/*.css'
         ],
         tasks: ['cssmin']
       }
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          '<%assets_location%>/css/style.css': ['css/style.css']
+          '<%= assets_location%>/css/style.css': ['css/style.min.css']
         }
       }
     },

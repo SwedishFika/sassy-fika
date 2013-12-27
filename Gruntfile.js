@@ -6,12 +6,12 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     watch: {
-      compass: {
+      sass: {
         files: [
         '<%= assets_location%>/**/*.scss'
         /*'bower_components/normalize-css/normalize.css'*/
         ],
-        tasks: ['compass']
+        tasks: ['sass']
       },
       css: {
         files: [

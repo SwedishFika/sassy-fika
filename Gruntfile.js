@@ -8,8 +8,8 @@ module.exports = function(grunt) {
     watch: {
       compass: {
         files: [
-        'scss/*',
-        'bower_components/normalize-css/normalize.css'
+        'scss/*'
+        /*'bower_components/normalize-css/normalize.css'*/
         ],
         tasks: ['compass']
       },
@@ -27,18 +27,18 @@ module.exports = function(grunt) {
       },
       combinejs: {
         files: {
-          '<%= ghost_location %>content/themes/<%= ghost_theme_name %>/assets/js/all.min.js': 
+          /*TODO: add necessary js-files here…
+          '<%assets_location%>/js/all.min.js':
           [
-          'bower_components/modernizr/modernizr.js',
-          'custom_components/responsive_iframes/responsive_iframes.js'
-          ]
+          'bower_components/modernizr/modernizr.js'
+          ]*/
         }
       }
     },
 
     compass: {
-      dev: {                  
-        options: {              
+      dev: {
+        options: {
           sassDir: 'scss',
           cssDir: 'css'
         }
@@ -48,12 +48,12 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          '<%= ghost_location %>content/themes/<%= ghost_theme_name %>/assets/css/style.css': ['bower_components/normalize-css/normalize.css', 'css/style.css']
+          '<%assets_location%>/css/style.css': ['css/style.css']
         }
       }
     },
 
-    'ghost_location': '../Ghost/',
+    'assets_location': 'assets',
     'ghost_theme_name': 'sassy-fika',
 
   });

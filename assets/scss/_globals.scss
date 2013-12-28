@@ -1,16 +1,15 @@
 html, body{
-
+    color: $text;
 }
 html{
     border-top: 4px solid $dark;
-    background-color: $dark;
+    background-color: $base-bg;
 }
 body{
-    max-width: $framework-max-width;
     margin: 0 auto;
 }
 a{
-    color: $link-color;
+
 }
 img{
     max-width: 100%;
@@ -52,7 +51,7 @@ textarea{
 input, 
 textarea{
     width: 100%;
-    @include box-sizing(border-box);
+    @include prefixer(box-sizing, border-box, moz webkit);
     margin:0 0 calc-percent(13, 600);
     border: 1px solid #e1e1e1;
     border-radius: 3px;

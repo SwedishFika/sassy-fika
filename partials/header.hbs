@@ -1,13 +1,8 @@
-<div role='banner' class="header">
+<header role='banner' class="fika-header">
 {{#if @blog.logo}}<a class="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
 <h1 class="blogtitle">
-<a title="{{@blog.title}}" href='{{@blog.url}}'>
-{{{@blog.title}}}
+<a href='{{@blog.url}}'>
+    <img src="/assets/images/swedish-fika-logo.svg" alt="{{@blog.title}}">
 </a>
 </h1>
-<h2 class="blogdescription">
-<a title="{{@blog.title}}" href='{{@blog.url}}'>
-{{@blog.description}}
-</a>
-</h2>
-</div>
+</header>

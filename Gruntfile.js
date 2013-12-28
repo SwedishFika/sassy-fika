@@ -9,13 +9,12 @@ module.exports = function(grunt) {
       sass: {
         files: [
         '<%= assets_location%>/**/*.scss'
-        /*'bower_components/normalize-css/normalize.css'*/
         ],
         tasks: ['sass']
       },
       css: {
         files: [
-        '<%= assets_location%>/**/*.css'
+        '<%= assets_location%>/css/style.css'
         ],
         tasks: ['cssmin']
       }
@@ -50,7 +49,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          '<%= assets_location%>/css/style.css': ['css/style.min.css']
+          '<%= assets_location%>/css/style.min.css': ['<%= assets_location%>/css/style.css']
         }
       }
     },

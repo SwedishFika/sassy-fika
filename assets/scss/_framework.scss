@@ -1,0 +1,28 @@
+@media screen{
+    html{
+        background: $base-bg url(../images/cozy-txture.png) repeat;
+    }
+    body{
+        font-family: "nimbus-sans", Helvetica, sans-serif;
+        font-weight: lighter;
+    }
+    main,
+    .fika-header{
+        max-width: $framework-max-width;
+        margin: 0 auto;
+    }
+    main{
+        padding: 0 16%;
+    }
+    .fika-header{
+        text-align: center;
+        background-color: $coffee-table-bg;
+    }
+    .fika-header h1{
+        margin: 0;
+        padding: 3% 0 0 0;
+    }
+    .fika-footer{
+        text-align: center;
+    }
+}

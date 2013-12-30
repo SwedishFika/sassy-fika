@@ -1,4 +1,11 @@
 .post-title{
     font-family: 'Jubilat', Georgia, serif;
     @include font-size(83/$font-base, 76/$font-base);
+    color: $header;
+}
+.post-content p:first-child{
+    color: $alternate;
+    font-family: 'Berthold Akzidenz Grotesk', Arial, sans-serif;
+    font-weight: 400;
+    @include font-size(42/$font-base, 54/$font-base);
 }

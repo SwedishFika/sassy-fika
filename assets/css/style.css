@@ -63,32 +63,71 @@ article h1 {
   }
 
   main {
-    padding: 0 16%;
+    /*padding: 0 16%;*/
   }
 
   .fika-header {
     text-align: center;
-    background-color: #9f978f;
+    height: 2em;
   }
 
   .fika-header h1 {
     margin: 0;
-    padding: 3% 0 0 0;
+    padding: 1.5% 0 0 0;
   }
 
   .fika-footer {
     text-align: center;
   }
-}
-.post-title {
-  font-family: "Jubilat", Georgia, serif;
-  font-size: 83px;
-  line-height: 76px;
-  font-size: 3.45833rem;
-  line-height: 3.16667rem;
-  color: #fffcde;
-}
 
+  .weighty-post-header {
+    position: relative;
+    top: -2em;
+    padding: 15% 0;
+  }
+  .weighty-post-header a,
+  .weighty-post-header h1 {
+    font-family: "Jubilat", Georgia, serif;
+    font-size: 32px;
+    line-height: 29px;
+    font-size: 1.33333rem;
+    line-height: 1.20833rem;
+    color: #fffcde;
+    margin: 15% 0;
+    text-decoration: none;
+  }
+  .weighty-post-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    max-width: 1280px;
+    min-width: 60px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 600px) {
+  .weighty-post-header a,
+  .weighty-post-header h1 {
+    font-size: 42px;
+    line-height: 38px;
+    font-size: 1.75rem;
+    line-height: 1.58333rem;
+  }
+}
+@media (min-width: 800px) {
+  .weighty-post-header a,
+  .weighty-post-header h1 {
+    font-size: 83px;
+    line-height: 76px;
+    font-size: 3.45833rem;
+    line-height: 3.16667rem;
+    margin: 7% 0;
+  }
+}
 .post-content p:first-child {
   color: #80c8ce;
   font-family: "Berthold Akzidenz Grotesk", Arial, sans-serif;
@@ -103,3 +142,31 @@ article h1 {
   text-decoration: none;
   color: #fffcde;
 }
+
+.featured-post header {
+  padding-bottom: 30%;
+  /*    position: absolute;
+      top: 4px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      width:100%;
+      max-width: 1280px;
+      min-width: 60px;
+      overflow:hidden;
+      margin: 0 auto;
+      padding:10% 0;*/
+}
+
+/*.featured-image{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width:100%;
+    max-width: 1280px;
+    min-width: 60px;
+    overflow:hidden;
+    margin: 0 auto;
+}*/

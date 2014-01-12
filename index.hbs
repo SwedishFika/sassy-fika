@@ -3,10 +3,12 @@
 <main class="main" role="main">
 {{#foreach posts}}
 	{{#if @first}} 
-	<article role="article" itemscope itemtype="http://schema.org/Article">
-		<header class="post-header">
+	<article class="featured-post" role="article" itemscope itemtype="http://schema.org/Article">
+		<header class="weighty-post-header">
 			<h1 class="post-title" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}} den första</a></h1>
+			<img class="featured-image" src="/assets/images/article.jpg">
 		</header>
+		
 		<time class="date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
 		<div class="postcontent" itemprop="articleBody">
 			{{content}}
